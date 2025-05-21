@@ -6,3 +6,6 @@ My Tauri playground with JS
 
 ```bash
 npm create tauri-app@latest
+cd my-new-app
+npm install
+npm run dev
