@@ -9,35 +9,18 @@
 </head>
 
 <body>
-<main class="container">
-    <h1>Welcome to Tauri</h1>
-
-    <div class="row">
-        <a href="https://vitejs.dev" target="_blank">
-            <img src="/src/assets/vite.svg" class="logo vite" alt="Vite logo"/>
-        </a>
-        <a href="https://tauri.app" target="_blank">
-            <img
-                    src="/src/assets/tauri.svg"
-                    class="logo tauri"
-                    alt="Tauri logo"
-            />
-        </a>
-        <a href="https://www.typescriptlang.org/docs" target="_blank">
-            <img
-                    src="/src/assets/typescript.svg"
-                    class="logo typescript"
-                    alt="typescript logo"
-            />
-        </a>
+<main class="flex justify-center items-center w-screen h-screen bg-cyan-100">
+    <div class="p-2 bg-amber-50 rounded-sm text-center">
+        <h1 class="text-3xl font-bold underline">Welcome to Tauri</h1>
+        <div class="text-gray-900 text-sm">
+            <form id="greet-form">
+                <input id="greet-input" placeholder="Enter a name..." class="border border-gray-300 rounded-md"/>
+                <button type="submit" class="border border-gray-300 bg-amber-50">Greet...</button>
+            </form>
+            <p id="greet-msg" class="text-3xl font-bold underline"></p>
+        </div>
     </div>
-    <p>Click on the Tauri logo to learn more about the framework</p>
 
-    <form class="row" id="greet-form">
-        <input id="greet-input" placeholder="Enter a name..."/>
-        <button type="submit">Greet</button>
-    </form>
-    <p id="greet-msg"></p>
 </main>
 </body>
 </html>
