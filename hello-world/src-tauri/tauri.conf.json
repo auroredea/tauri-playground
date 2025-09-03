@@ -13,16 +13,19 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "hello-world",
+        "title": "My first hello world tauri",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "decorations": false,
+        "skipTaskbar": true,
+        "center": true
       }
     ],
     "security": {
       "csp": null
     }
   },
-  "bundle": {
+    "bundle": {
     "active": true,
     "targets": "all",
     "icon": [
